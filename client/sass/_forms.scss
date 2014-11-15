@@ -1,0 +1,28 @@
+input[type="text"] {
+  padding: 20px;
+  border: 0;
+  font-size: 24px;
+  background: white;
+  color: #333;
+
+  &::placeholder {
+    font-family: 'Lato', sans-serif;
+    color: #ddd;
+    opacity: 1;
+    font-weight: 400;
+  }
+}
+
+.button {
+  padding: 20px;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 4px;
+  width: 100%;
+  display: block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+}

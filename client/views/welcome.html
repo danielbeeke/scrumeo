@@ -1,0 +1,45 @@
+<template name="Welcome">
+
+  <section class="welcome" data-selected-avatar="avatar-1">
+
+  <h1>Let's play scrum poker!</h1>
+
+  <h2>1. Pick an avatar or <a href="#">upload one</a></h2>
+
+    <div class="avatar-selector-wrapper">
+      <div class="avatar-selector dragdealer" id="avatar-selector">
+        <div class="handle">
+          <input type="radio" name="avatar" id="avatar-1" value="1" checked class="avatar-radio">
+          <label class="avatar-label" for="avatar-1"></label>
+          <input type="radio" name="avatar" id="avatar-2" value="2" class="avatar-radio">
+          <label class="avatar-label" for="avatar-2"></label>
+          <input type="radio" name="avatar" id="avatar-3" value="3" class="avatar-radio">
+          <label class="avatar-label" for="avatar-3"></label>
+          <input type="radio" name="avatar" id="avatar-4" value="4" class="avatar-radio">
+          <label class="avatar-label" for="avatar-4"></label>
+          <input type="radio" name="avatar" id="avatar-5" value="5" class="avatar-radio">
+          <label class="avatar-label" for="avatar-5"></label>
+          <input type="radio" name="avatar" id="avatar-6" value="6" class="avatar-radio">
+          <label class="avatar-label" for="avatar-6"></label>
+        </div>
+      </div>
+    </div>
+
+    <h2>2. Tell us your name.</h2>
+
+    <div class="username-input-wrapper">
+      <input type="text" class="username" placeholder="Who are you?" />
+    </div>
+
+    <h2>3. Enter a shortcode.</h2>
+
+    <div class="shortcode-input-wrapper">
+      <input type="text" class="shortcode" placeholder="Anything goes!" />
+
+      <a href="#" class="start-scrum-poker button">Start</a>
+    </div>
+
+
+  </section>
+
+</template>

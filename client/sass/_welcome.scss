@@ -1,0 +1,139 @@
+.welcome {
+  $width: 140px;
+  $speed: 0.4s;
+  $hspacer: 40px;
+
+  padding-top: 1px;
+  padding-bottom: $hspacer;
+  width: 100%;
+  max-width: 720px;
+  background: orange;
+  transition: background $speed;
+  height: 100%;
+  margin: 0 auto;
+
+  .avatar-selector-wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .avatar-selector {
+    width: $width;
+    height: $width;
+    background: none;
+    margin-left: 30px;
+
+    &:after {
+      content: '';
+      border: 2px solid white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      border-radius: 4px;
+    }
+
+    .handle {
+      // background: white;
+      width: $width * 6;
+    }
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    .avatar-label {
+      position: relative;
+      float: left;
+      width: $width;
+      height: $width;
+      background-size: cover;
+      cursor: grab;
+      opacity: 0.2;
+      transition: opacity $speed;
+    }
+
+    input[type="radio"]:checked + label {
+      opacity: 1;
+      border-radius: 4px;
+    }
+
+    .avatar-label[for="avatar-1"] {
+      background-image: url(../images/avatar-1.png);
+    }
+
+    .avatar-label[for="avatar-2"] {
+      background-image: url(../images/avatar-2.png);
+    }
+
+    .avatar-label[for="avatar-3"] {
+      background-image: url(../images/avatar-3.png);
+    }
+
+    .avatar-label[for="avatar-4"] {
+      background-image: url(../images/avatar-4.png);
+    }
+
+    .avatar-label[for="avatar-5"] {
+      background-image: url(../images/avatar-5.png);
+    }
+
+    .avatar-label[for="avatar-6"] {
+      background-image: url(../images/avatar-6.png);
+    }
+  }
+
+  input[type="text"] {
+    width: 100%;
+    outline: none;
+    margin: 10px auto 0;
+    display: block;
+  }
+
+  .username-input-wrapper,
+  .shortcode-input-wrapper {
+    padding: 0 30px;
+  }
+
+  h1, h2, h3 {
+    padding: 0 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .button {
+    margin-top: 60px;
+  }
+
+  h2 a {
+    font-style: italic;
+    color: white !important;
+  }
+
+}
+
+.welcome[data-selected-avatar="avatar-1"] {
+  background-color: #6ac697;
+}
+
+.welcome[data-selected-avatar="avatar-2"] {
+  background-color: #dc8512;
+}
+
+.welcome[data-selected-avatar="avatar-3"] {
+  background-color: #8dc152;
+}
+
+.welcome[data-selected-avatar="avatar-4"] {
+  background-color: #dd574c;
+}
+
+.welcome[data-selected-avatar="avatar-5"] {
+  background-color: #8dc152;
+}
+
+.welcome[data-selected-avatar="avatar-6"] {
+  background-color: #4a8cae;
+}
